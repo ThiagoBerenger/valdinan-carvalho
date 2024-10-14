@@ -1,28 +1,43 @@
 import React, { useState } from 'react';
-import logo from '../../assets/logoOuro.png'; // Certifique-se de que o caminho está correto
-import './Header.modules.css'; // Importando os estilos
+
+import logo from '../../assets/logoNomeOuro.png';
+import './Header.modules.css';
+
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);  
 
   const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+    setDropdownOpen(!dropdownOpen); // Alterna a visibilidade do dropdown
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Alterna a visibilidade do menu hambúrguer
   };
 
   return (
     <header className="header">
       <div className="container">
         <img src={logo} alt="Logo" className="logo" />
+        
+        {/* Menu hambúrguer */}
+        <button className="hamburger" onClick={toggleMenu}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        
         <nav className="nav">
-          <ul className="nav-list">
+          {/* Menu de navegação */}
+          <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
             <li className="nav-item"><a href="#home">Home</a></li>
             <li className="nav-item"><a href="#about">Sobre</a></li>
-            <li 
-              className="nav-item" 
-              onMouseEnter={toggleDropdown} 
-              onMouseLeave={toggleDropdown}
-            >
-              <a href="#area-de-atuacao">Área de Atuação</a>
+
+            {/* Dropdown para Área de Atuação */}
+            <li className="nav-item" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : "false"}>
+              <a href="#area-de-atuacao"><IoMdArrowDropdown/> Área de Atuação</a>
               {dropdownOpen && (
                 <ul className="dropdown">
                   <li className="dropdown-item"><a href="#civil">Civil</a></li>
