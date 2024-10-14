@@ -8,18 +8,18 @@
 }
 
 :root {
-  --primary-blue: #08044c;
-  --dark-blue: #050037;
-  --accent-gold: #c7981f;
-  --light-gray: #f4f4f9;
-  --medium-gray: #a1a1a1;
-  --white: #ffffff;
-  --light-blue: #4a4e69;
-  
+  --primary-black: #000000; /* Preto */
+  --accent-gold: #FFD700; /* Gold */
+  --dark-gold: #C0B28A; /* Dark Gold */
+  --dark-gray: #1C1C1C; /* Cinza Escuro */
+  --charcoal-gray: #333333; /* Cinza carvão */
+  --silver: #C0C0C0; /* Prata */
+
   /* Tipografia */
   --font-body: 'Poppins', sans-serif;
   --font-serif: 'Noto Serif', serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);

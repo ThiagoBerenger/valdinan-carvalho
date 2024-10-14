@@ -1,16 +1,14 @@
 .header {
   padding: 2rem 0;
-  color: var(--white);
-  background-color: var(--primary-blue);
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #050037 40px),
-  repeating-linear-gradient(#08062f55, #08062f);
+  color: #fff;
+  background-image: linear-gradient(#1C1C1C, #000000);
 }
 
 .container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   max-width: var(--container-max-width);
+  align-items: center;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -36,7 +34,7 @@
 }
 
 .nav-item a {
-  color: var(--white);
+  color: var(--silver);
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -49,9 +47,9 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: var(--primary-blue);
+  background-color: var(--dark-gray);
   list-style: none;
-  padding: 10px;
+  padding: 10px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: none;
@@ -61,10 +59,11 @@
 
 .dropdown-item {
   margin: 5px 0;
+  text-align: start;
 }
 
 .dropdown-item a {
-  color: var(--white);
+  color: var(--silver);
   font-weight: 400;
   text-decoration: none;
   display: block;
@@ -73,8 +72,8 @@
 }
 
 .dropdown-item a:hover {
-  background-color: var(--dark-blue);
-  color: var(--primary-blue);
+  background-color: var(--dark-gray);
+  color: var(--primary-black);
 }
 
 .nav-item:hover .dropdown,
@@ -85,7 +84,7 @@
 
 /* Hamburger icon */
 .hamburger {
-  display: block;
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -105,7 +104,7 @@
   height: 3px;
   margin-bottom: 6px;
   position: relative;
-  background: var(--white);
+  background: var(--silver);
   z-index: 1;
   transform-origin: 4px 0px;
 }
@@ -141,7 +140,7 @@
     right: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--dark-blue);
+    background-color: var(--primary-black);
     z-index: 999;
     padding: 10px 0;
   }
@@ -164,7 +163,7 @@
   }
 
   .nav-item a:hover {
-    color: var(--white);
+    color: var(--silver);
   }
 
   .logo {
@@ -176,7 +175,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--primary-blue);
+    background-color: var(--primary-black);
     list-style: none;
     display: none;
     opacity: 0;
@@ -188,7 +187,7 @@
   }
 
   .dropdown-item a {
-    color: var(--white);
+    color: var(--silver);
     font-weight: 400;
     text-decoration: none;
     display: block;
@@ -198,7 +197,7 @@
   }
   
   .dropdown-item a:hover {
-    background-color: var(--dark-blue);
-    color: var(--primary-blue);
+    background-color: var(--dark-gray);
+    color: var(--primary-black);
   }
 }
