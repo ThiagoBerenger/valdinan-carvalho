@@ -5,3 +5,34 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --primary-blue: #08044c;
+  --dark-blue: #050037;
+  --accent-gold: #c7981f;
+  --light-gray: #f4f4f9;
+  --medium-gray: #a1a1a1;
+  --white: #ffffff;
+  --light-blue: #4a4e69;
+  
+  /* Tipografia */
+  --font-body: 'Poppins', sans-serif;
+  --font-serif: 'Noto Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+button {
+  background-color: var(--accent-gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--light-blue);
+}
