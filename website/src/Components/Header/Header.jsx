@@ -32,8 +32,8 @@ const Header = () => {
         <nav className="nav">
           {/* Menu de navegação */}
           <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
-            <li className="nav-item"><a href="#home">Home</a></li>
-            <li className="nav-item"><a href="#about">Sobre</a></li>
+            <li className="nav-item"><a href="/">Home</a></li>
+            <li className="nav-item"><a href="/sobre">Sobre</a></li>
 
             {/* Dropdown para Área de Atuação */}
             <li className="nav-item" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : "false"}>
