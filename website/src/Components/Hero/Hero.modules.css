@@ -46,11 +46,13 @@
     font-weight: 300;
 }
 
-.hero-content button {
+.hero-content a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     font-size: 18px;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
+    width: 280px;
     margin: 1rem 0;
     cursor: pointer;
     background-color: var(--dark-gray);
@@ -61,7 +63,7 @@
     gap: 1rem;
 }
 
-.hero-content button:hover {
+.hero-content a:hover {
     transform: translateY(-6px);
     background-color: var(--accent-gold);
     color: #000;

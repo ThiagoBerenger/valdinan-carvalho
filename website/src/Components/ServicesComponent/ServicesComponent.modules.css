@@ -40,6 +40,12 @@
     border: 1px solid var(--dark-gray);
     padding: 2rem;
     cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.box:hover {
+    color: var(--dark-gold);
+    border: 1px solid var(--dark-gold);
 }
 
 .box svg {
