@@ -33,3 +33,22 @@
     width: 220px;
     height: 220px;
 }
+
+@media screen and (max-width: 900px) {
+    .values-container {
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    
+    .values-boxes_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .value-box {
+        padding: 1rem;
+        width: 180px;
+        height: 180px;
+    }
+}

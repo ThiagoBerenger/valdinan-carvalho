@@ -42,6 +42,10 @@ const Values = () => {
           <PiCheckCircle size={40} />
           <h3>Compliance</h3>
         </div>
+
+        <div className="value-box">
+            <p>Esses princípios norteiam nosso trabalho diário.</p>
+        </div>
       </div>
     </div>
   );
