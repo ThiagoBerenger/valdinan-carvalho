@@ -1,7 +1,7 @@
 .header {
   padding: 2rem 0;
   color: #fff;
-  background-image: url('../../assets/textura.png');
+  background-image: url('../../assets/texturaAzul.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 2px solid var(--accent-gold);
