@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.modules.css'
 
-import heroImage from '../../assets/juiz.jpg'
+import heroImage from '../../assets/juiz.png'
 
 import { FaWhatsapp } from "react-icons/fa";
 
