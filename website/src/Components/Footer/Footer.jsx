@@ -27,6 +27,18 @@ const Footer = () => {
             <li><FaPhoneAlt  /> <a href="tel:+5521994634084">(21) 99463-4084</a></li>
           </ul>
         </div>
+
+        {/* horários */}
+        <div className="footer-section">
+          <h3>Informações de Contato</h3>
+          <ul>
+            <li>Segunda-feira 09:00 - 19:00</li>
+            <li>Terça-feira 09:00 - 19:00</li>
+            <li>Quarta-feira 09:00 - 19:00</li>
+            <li>Quinta-feira 09:00 - 19:00</li>
+            <li>Sexta-feira 09:00 - 19:00</li>
+          </ul>
+        </div>
       </div>
 
       {/* Copyright */}
