@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import Link from 'react-router-dom'
+
 import logo from '../../assets/logoNomeOuro.png';
 import './Header.modules.css';
 
@@ -20,7 +22,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <img src={logo} alt="Logo" className="logo" />
+        <Link to='/'><img src={logo} alt="Logo" className="logo" /></Link>
         
         {/* Menu hambúrguer */}
         <button className="hamburger" onClick={toggleMenu}>
@@ -40,14 +42,14 @@ const Header = () => {
               <a href="#area-de-atuacao"><IoMdArrowDropdown/> Área de Atuação</a>
               {dropdownOpen && (
                 <ul className="dropdown">
-                  <li className="dropdown-item"><a href="#civil">Civil</a></li>
-                  <li className="dropdown-item"><a href="#penal">Penal</a></li>
-                  <li className="dropdown-item"><a href="#trabalhista">Trabalhista</a></li>
-                  <li className="dropdown-item"><a href="#empresarial">Empresarial</a></li>
-                  <li className="dropdown-item"><a href="#familia">Família</a></li>
-                  <li className="dropdown-item"><a href="#tributario">Tributário</a></li>
-                  <li className="dropdown-item"><a href="#consumidor">Consumidor</a></li>
-                  <li className="dropdown-item"><a href="#previdenciario">Previdenciário</a></li>
+                  <li className="dropdown-item"><a href="/civil">Civil</a></li>
+                  <li className="dropdown-item"><a href="/penal">Penal</a></li>
+                  <li className="dropdown-item"><a href="/trabalhista">Trabalhista</a></li>
+                  <li className="dropdown-item"><a href="/empresarial">Empresarial</a></li>
+                  <li className="dropdown-item"><a href="/familia">Família</a></li>
+                  <li className="dropdown-item"><a href="/tributario">Tributário</a></li>
+                  <li className="dropdown-item"><a href="/consumidor">Consumidor</a></li>
+                  <li className="dropdown-item"><a href="/previdenciario">Previdenciário</a></li>
                 </ul>
               )}
             </li>
