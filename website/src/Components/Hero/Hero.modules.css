@@ -69,17 +69,17 @@
 
 @media screen and (max-width: 900px) {    
     .hero-container img {
-        height: 50vh;
+        height: 70vh;
     }
     
     .hero-container::before {
-        height: 50vh;
+        height: 70vh;
     }
     
     .hero-content {
         position: absolute;
         color: var(--dark-gray);
-        top: 20%;
+        top: 30%;
         left: 0%;
         color: white;
         margin: 0 1rem;
