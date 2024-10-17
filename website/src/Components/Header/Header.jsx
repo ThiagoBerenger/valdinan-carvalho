@@ -34,26 +34,26 @@ const Header = () => {
         <nav className="nav">
           {/* Menu de navegação */}
           <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
-            <li className="nav-item"><a href="/">Home</a></li>
-            <li className="nav-item"><a href="/sobre">Sobre</a></li>
+            <li className="nav-item"><Link to="/">Home</Link></li>
+            <li className="nav-item"><Link to="/sobre">Sobre</Link></li>
 
             {/* Dropdown para Área de Atuação */}
             <li className="nav-item" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : "false"}>
               <a href="#area-de-atuacao"><IoMdArrowDropdown/> Área de Atuação</a>
               {dropdownOpen && (
                 <ul className="dropdown">
-                  <li className="dropdown-item"><a as={Link} href="/direito-civil">Civil</a></li>
-                  <li className="dropdown-item"><a href="/penal">Penal</a></li>
-                  <li className="dropdown-item"><a href="/trabalhista">Trabalhista</a></li>
-                  <li className="dropdown-item"><a href="/empresarial">Empresarial</a></li>
-                  <li className="dropdown-item"><a href="/familia">Família</a></li>
-                  <li className="dropdown-item"><a href="/tributario">Tributário</a></li>
-                  <li className="dropdown-item"><a href="/consumidor">Consumidor</a></li>
-                  <li className="dropdown-item"><a href="/previdenciario">Previdenciário</a></li>
+                  <li className="dropdown-item"><Link to="/direito-civil">Civil</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-penal">Penal</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-trabalhista">Trabalhista</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-empresarial">Empresarial</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-da-familia">Família</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-tributario">Tributário</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-do-consumidor">Consumidor</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-previdenciario">Previdenciário</Link></li>
                 </ul>
               )}
             </li>
-            <li className="nav-item"><a href="#contact">Contato</a></li>
+            <li className="nav-item"><Link to="/contato">Contato</Link></li>
           </ul>
         </nav>
       </div>
