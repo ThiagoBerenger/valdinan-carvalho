@@ -24,8 +24,8 @@ const containerVariants = {
     opacity: 1,
     scale: 1,
     transition: {
-      delayChildren: 0.3, // Atraso antes de iniciar a animação dos filhos
-      staggerChildren: 0.2 // Atraso entre cada animação de item
+      delayChildren: 0.2, // Atraso antes de iniciar a animação dos filhos
+      staggerChildren: 0.15 // Atraso entre cada animação de item
     }
   }
 };
