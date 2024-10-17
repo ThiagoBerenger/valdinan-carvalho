@@ -1,76 +1,120 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './ServicesComponent.modules.css'
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+import './ServicesComponent.modules.css';
 
-// icones
-import { PiGavelThin, PiBuildingApartmentThin, PiCurrencyCircleDollarThin, PiUserThin,PiHouseLineThin, PiShieldPlusThin, PiIdentificationCardThin, PiShoppingCartSimpleThin  } from "react-icons/pi";
+// Importando o motion + in view
+import { motion, useInView } from 'framer-motion'; 
+
+// ícones
+import { 
+  PiGavelThin, 
+  PiBuildingApartmentThin, 
+  PiCurrencyCircleDollarThin, 
+  PiUserThin,
+  PiHouseLineThin, 
+  PiShieldPlusThin, 
+  PiIdentificationCardThin, 
+  PiShoppingCartSimpleThin  
+} from "react-icons/pi";
+
+// Definindo os variants para o container e os itens
+const containerVariants = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3, // Atraso antes de iniciar a animação dos filhos
+      staggerChildren: 0.2 // Atraso entre cada animação de item
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
 
 const ServicesComponent = () => {
+
+    const ref = useRef(null)
+    const isInView = useInView(ref)
+
   return (
     <div className='services-container'>
-        <h2>NOSSAS ESPECIALIDADES</h2>
-        <h3>Área de Atuação</h3>
+      <h2>NOSSAS ESPECIALIDADES</h2>
+      <h3>Área de Atuação</h3>
 
-    <div className="boxes-container">
+      {/* Container das boxes */}
+      <motion.div 
+        className="boxes-container"
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+      >
         <Link to='/direito-civil'>
-            <div className="box">
-                <PiUserThin />
-                <h4>Civil</h4>
-            </div>
+          <motion.div className="box" variants={itemVariants}>
+            <PiUserThin />
+            <h4>Civil</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-penal'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiGavelThin />
-                <h4>Penal</h4>
-            </div>
+            <h4>Penal</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-trabalhista'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiIdentificationCardThin />
-                <h4>Trabalhista</h4>
-            </div>
+            <h4>Trabalhista</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-empresarial'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiBuildingApartmentThin />
-                <h4>Empresarial</h4>
-            </div>
+            <h4>Empresarial</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-da-familia'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiHouseLineThin />
-                <h4>Família</h4>
-            </div>
+            <h4>Família</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-tributario'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiCurrencyCircleDollarThin />
-                <h4>Tributário</h4>
-            </div>
+            <h4>Tributário</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-do-consumidor'>
-            <div className="box">
+          <motion.div className="box" variants={itemVariants}>
             <PiShoppingCartSimpleThin />
-                <h4>Consumidor</h4>
-            </div>
+            <h4>Consumidor</h4>
+          </motion.div>
         </Link>
 
         <Link to='/direito-previdenciario'>
-            <div className="box">
-            <PiShieldPlusThin  />
-                <h4>Previdenciário</h4>
-            </div>
+          <motion.div className="box" variants={itemVariants}>
+            <PiShieldPlusThin />
+            <h4>Previdenciário</h4>
+          </motion.div>
         </Link>
-    </div>
+      </motion.div>
 
     </div>
-  )
-}
+  );
+};
 
-export default ServicesComponent
+export default ServicesComponent;
