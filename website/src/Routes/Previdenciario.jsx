@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { ScrollRestoration } from 'react-router-dom'
+
 import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
@@ -14,6 +16,7 @@ Além disso, nossos advogados estão sempre atualizados sobre as mudanças na le
 
   return (
     <div>
+      <ScrollRestoration/>
          <AreasComponent title={'Previdenciário'} text={text}/>
         <ServicesComponent />
         <Form />

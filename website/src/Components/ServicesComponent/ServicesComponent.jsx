@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './ServicesComponent.modules.css'
 
 // icones
@@ -11,38 +12,61 @@ const ServicesComponent = () => {
         <h3>Área de Atuação</h3>
 
     <div className="boxes-container">
-        <div className="box">
-            <PiUserThin />
-            <h4>Civil</h4>
-        </div>
-        <div className="box">
-        <PiGavelThin /> 
-            <h4>Penal</h4>
-        </div>
-        <div className="box">
-        <PiIdentificationCardThin /> 
-            <h4>Trabalhista</h4>
-        </div>
-        <div className="box">
-        <PiBuildingApartmentThin /> 
-            <h4>Empresarial</h4>
-        </div>
-        <div className="box">
-        <PiHouseLineThin /> 
-            <h4>Família</h4>
-        </div>
-        <div className="box">
-        <PiCurrencyCircleDollarThin /> 
-            <h4>Tributário</h4>
-        </div>
-        <div className="box">
-        <PiShoppingCartSimpleThin /> 
-            <h4>Consumidor</h4>
-        </div>
-        <div className="box">
-        <PiShieldPlusThin  /> 
-            <h4>Previdenciário</h4>
-        </div>
+        <Link to='/direito-civil'>
+            <div className="box">
+                <PiUserThin />
+                <h4>Civil</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-penal'>
+            <div className="box">
+            <PiGavelThin />
+                <h4>Penal</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-trabalhista'>
+            <div className="box">
+            <PiIdentificationCardThin />
+                <h4>Trabalhista</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-empresarial'>
+            <div className="box">
+            <PiBuildingApartmentThin />
+                <h4>Empresarial</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-da-familia'>
+            <div className="box">
+            <PiHouseLineThin />
+                <h4>Família</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-tributario'>
+            <div className="box">
+            <PiCurrencyCircleDollarThin />
+                <h4>Tributário</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-do-consumidor'>
+            <div className="box">
+            <PiShoppingCartSimpleThin />
+                <h4>Consumidor</h4>
+            </div>
+        </Link>
+
+        <Link to='/direito-previdenciario'>
+            <div className="box">
+            <PiShieldPlusThin  />
+                <h4>Previdenciário</h4>
+            </div>
+        </Link>
     </div>
 
     </div>

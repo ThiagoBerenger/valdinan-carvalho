@@ -29,6 +29,11 @@
     gap: 4rem;
 }
 
+.boxes-container  a {
+    text-decoration: none !important;
+    color: var(--dark-gray);
+}
+
 .box {
     width: 180px;
     height: 180px;

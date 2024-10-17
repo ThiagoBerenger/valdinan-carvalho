@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { ScrollRestoration } from 'react-router-dom'
+
 import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
@@ -15,6 +17,7 @@ const Tributario = () => {
 
   return (
     <div>
+      <ScrollRestoration/>
         <AreasComponent title={'Tributário'} text={text}/>
         <ServicesComponent />
         <Form />

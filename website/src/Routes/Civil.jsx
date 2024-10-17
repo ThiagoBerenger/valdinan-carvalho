@@ -1,5 +1,8 @@
 import React from 'react'
 
+// importando restaurador de scroll
+import { ScrollRestoration } from 'react-router-dom'
+
 import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
@@ -14,6 +17,7 @@ const Civil = () => {
 
   return (
     <div>
+        <ScrollRestoration/>
         <AreasComponent title='Civil' text={text}/>
         <ServicesComponent/>
         <Form/>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { ScrollRestoration } from 'react-router-dom'
 
 import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
@@ -15,6 +16,7 @@ const Penal = () => {
 
   return (
     <div>
+      <ScrollRestoration/>
         <AreasComponent title={'Penal'} text={text}/>
         <ServicesComponent />
         <Form />
