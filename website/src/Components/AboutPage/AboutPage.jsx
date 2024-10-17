@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './AboutPage.modules.css'
+
+import { motion, useInView } from 'framer-motion'
 
 import foto from '../../assets/foto.jpeg'
 
 const AboutPage = () => {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
+
   return (
     <div className='about-page_container'>
         <div className="about-page_title">
@@ -12,7 +18,11 @@ const AboutPage = () => {
         </div>
         
         {/* conteúdo */}
-        <div className="about-page_content">
+        <motion.div className="about-page_content"
+          ref={ref}
+          initial={{ x: '-20vw', opacity: 0 }} 
+          animate={isInView ? { x: 0, opacity: 1} : { x: '-20vw', opacity: 0 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20 }}>
             <img src={foto} alt="Valdinan Carvalho" />
             <div className='about-text_container'>
                 <h3>Conheça nossa história</h3>
@@ -21,7 +31,7 @@ const AboutPage = () => {
                 <p>Fundado com o objetivo de oferecer serviços jurídicos de excelência, nosso escritório de advocacia alia seriedade, competência, compromisso com prazos, empatia e confiança para atender às necessidades de nossos clientes. Somos guiados pela busca constante por soluções inovadoras e eficazes, valorizando a ética e a transparência em todas as nossas ações. <br />
                 Sediado na cidade de Rio de Janeiro desde 2020 e atuando nas cidades de Niterói, São João de Meriti, São Gonçalo, Itaborai, DF e Norte de Minas Gerais, nosso escritório conta com a expertise dos advogados Valdinan Soares e Camila Angélico, que compartilham a visão de um atendimento personalizado, pautado na empatia e na compreensão das particularidades de cada caso.</p>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
