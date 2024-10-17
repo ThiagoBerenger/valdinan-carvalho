@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.modules.css"; // Certifique-se de criar esse arquivo para o CSS
 
+import { Link } from 'react-router-dom'
+
 import { FaMapMarkerAlt, FaPhoneAlt   } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -12,9 +14,14 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Páginas</h3>
           <ul>
-            <li><a href="/home">Home</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/contato">Contato</a></li>
+            <li>
+              <Link to="/">Home</Link>
+              </li>
+            <li>
+              <Link to="/sobre">Sobre</Link>
+              </li>
+            <li>
+              <Link to="/contato">Contato</Link></li>
           </ul>
         </div>
 
