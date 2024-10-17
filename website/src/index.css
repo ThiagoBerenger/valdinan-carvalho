@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--dark-gold);
-  border: 2px solid var(--dark-gray);
 }
 
 ::-webkit-scrollbar-thumb:hover {
