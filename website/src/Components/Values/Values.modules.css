@@ -1,6 +1,6 @@
 .values-container {
     margin: 0 auto;
-    background-color: var(--dark-gray);
+    background-color: var(--dark-gold);
     padding: 4rem 0;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 
 .values-container h2 {
     font-size: 32px;
-    color: var(--accent-gold);
+    color: var(--dark-gray);
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -26,8 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid var(--accent-gold);
-    color: #fff;
+    border: 1px solid var(--dark-gray);
+    color: var(--dark-gray);
     text-align: center;
     padding: 2rem;
     width: 220px;
