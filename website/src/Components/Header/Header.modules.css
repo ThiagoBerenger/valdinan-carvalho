@@ -162,6 +162,7 @@
     background-color: var(--dark-gray);
     z-index: 999;
     padding: 10px 0;
+    overflow-y: scroll;
   }
 
   .nav-list.active {
@@ -172,9 +173,8 @@
 
   .nav-item {
     margin: 0;
-    padding: 15px 0;
+    padding: 1rem 0;
     width: 100%;
-    text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.267);
   }
 
@@ -191,7 +191,6 @@
   .dropdown {
     position: absolute;
     top: 100%;
-    left: 0;
     background-color: var(--dark-gray);
     list-style: none;
     display: none;
@@ -200,26 +199,7 @@
   }
 
   .dropdown-item {
-    overflow-y: scroll;
+    padding: 1rem 0;
   }
 
-  .dropdown-item a {
-    color: var(--silver);
-    font-weight: 400;
-    text-decoration: none;
-    display: block;
-    padding: 8px 15px;
-    transition: background-color 0.3s ease;
-    width: 100%;
-  }
-
-  .dropdown-item a:hover {
-    background-color: var(--dark-gray);
-    color: var(--primary-black);
-  }
-
-  /* Dropdown toggle on click */
-  .dropdown-item a:focus, .dropdown-item a:hover {
-    color: var(--accent-gold);
-  }
 }
