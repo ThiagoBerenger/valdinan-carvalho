@@ -39,7 +39,7 @@ const Header = () => {
 
             {/* Dropdown para Área de Atuação */}
             <li className="nav-item" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : "false"}>
-              <a href="#area-de-atuacao"><IoMdArrowDropdown/> Área de Atuação</a>
+              <a><IoMdArrowDropdown/> Área de Atuação</a>
               {dropdownOpen && (
                 <ul className="dropdown">
                   <li className="dropdown-item"><Link to="/direito-civil" onClick={() => {setMenuOpen(false)}}>Civil</Link></li>

@@ -30,8 +30,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  
 }
 
 .nav-item {
@@ -46,6 +44,7 @@
   padding: 5px 10px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-item a:hover {
