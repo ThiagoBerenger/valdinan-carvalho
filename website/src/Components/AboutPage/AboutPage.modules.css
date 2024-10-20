@@ -43,6 +43,28 @@
     border-radius: 1rem 1rem 0;
 }
 
+.about-img_container {
+    position: relative;
+}
+
+.about-img_text {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 0rem 1rem;
+    background-color: var(--dark-gold);
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-img_text h5, h6 {
+    font-size: 16px;
+    color: var(--dark-gray);
+    font-family: poppins;
+}
+
+
 .about-text_container {
     padding: 0 2rem;
 }
@@ -86,5 +108,9 @@
     .about-text_container p {
         padding: 1rem 0;
         width: 90%;
+    }
+
+    .about-img_text {
+        border-radius: 0;
     }
 }

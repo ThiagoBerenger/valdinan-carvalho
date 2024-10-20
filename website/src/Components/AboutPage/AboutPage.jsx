@@ -23,7 +23,13 @@ const AboutPage = () => {
           initial={{ x: '-20vw', opacity: 0 }} 
           animate={isInView ? { x: 0, opacity: 1} : { x: '-20vw', opacity: 0 }}
           transition={{ type: "spring", stiffness: 100, damping: 20 }}>
-            <img src={foto} alt="Valdinan Carvalho" />
+            <div className="about-img_container">
+              <img src={foto} alt="Valdinan Carvalho" />
+              <div className="about-img_text">
+                <h5>Advogado</h5>
+                <h6>OAB: 237.536/RJ</h6>
+              </div>
+              </div>
             <div className='about-text_container'>
                 <h3>Conheça nossa história</h3>
                 <h4>Valdinan Carvalho Advocacia & Consultoria Juridica</h4>
