@@ -6,6 +6,7 @@ import Form from '../Components/Form/Form'
 import GoogleReviews from '../Components/GoogleReviews/GoogleReviews'
 
 import { ScrollRestoration } from 'react-router-dom'
+import CoverageArea from '../Components/CoverageArea/CoverageArea'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <ScrollRestoration/>
         <Hero />
         <ServicesComponent/>
+        <CoverageArea/>
         <AboutCta/>
         <GoogleReviews/>
         <Form/>
