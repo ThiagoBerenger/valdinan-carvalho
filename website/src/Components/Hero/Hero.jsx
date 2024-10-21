@@ -11,7 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className='hero-container'>
-      <img src={heroImage} alt="Valdinan Carvalho - Advocacia e Consultoria Jurídica" loading='lazy'/>
+      <img src={heroImage} alt="Valdinan Carvalho - Advocacia e Consultoria Jurídica" />
 
         <motion.div className="hero-content"
            initial={{ x: '-20vw', opacity: 0 }} 

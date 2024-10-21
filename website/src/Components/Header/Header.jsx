@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <Link to='/'><img src={logo} alt="Logo Valdinan Carvalho - Advocacia e Consultoria Jurídica" className="logo" /></Link>
+        <Link to='/'><img src={logo} alt="Logo Valdinan Carvalho - Advocacia e Consultoria Jurídica" className="logo"/></Link>
         
         {/* Menu hambúrguer */}
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
