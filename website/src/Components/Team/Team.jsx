@@ -30,9 +30,10 @@ const Team = () => {
                 <h3>Sobre mim</h3>
                 <h4>Valdinan Soares</h4>
                 
-                <p>Advogado, Pós-Graduado em Direito Digital, com OAB ativa, com conhecimentos em contencioso de massa nas áreas de direito Civil,Trabalhista,Tributário,Consumidor com experiência prática em litígios e consultoria jurídica.</p>
-                <p>Com habilidades interpessoais bem desenvolvidas, o que me permite lidar efetivamente com clientes e colaborar de forma produtiva com uma equipe.</p>
-                <p>Membro do Núcleo de Estudos em Arbitragem da Faculdade Presbiteriana Mackenzie Rio (NEAMACK) e do Comitê de Jovens Arbitralistas (CJA/CBMA).</p>
+                <p>Advogado com OAB ativa, Pós-Graduado em Direito Digital, Previdenciário e Trabalhista, com ampla experiência em contencioso de massa nas áreas Civil, Trabalhista e Previdenciária. Atua de forma estratégica na condução de litígios e consultoria jurídica, garantindo uma abordagem eficiente e orientada para resultados.</p>
+                <p>Diferencia-se por suas habilidades interpessoais bem desenvolvidas, que permitem atendimento próximo e eficaz, assegurando a satisfação e confiança dos clientes em cada etapa do processo.</p>
+                <p>Valdinan é membro da Comissão Especial de Direito Bancário da OAB-SP e integra o Comitê de Jovens Arbitralistas (CJA/CBMA), destacando-se também por sua atuação em meios alternativos de solução de conflitos e pela constante busca de atualização e aprimoramento profissional.</p>
+
             </div>
             
         </motion.div>

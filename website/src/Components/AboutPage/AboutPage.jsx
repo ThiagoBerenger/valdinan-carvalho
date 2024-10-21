@@ -28,8 +28,8 @@ const AboutPage = () => {
                 <h3>Conheça nossa história</h3>
                 <h4>Valdinan Carvalho Advocacia & Consultoria Juridica</h4>
                 
-                <p>Fundado com o objetivo de oferecer serviços jurídicos de excelência, nosso escritório de advocacia alia seriedade, competência, compromisso com prazos, empatia e confiança para atender às necessidades de nossos clientes. Somos guiados pela busca constante por soluções inovadoras e eficazes, valorizando a ética e a transparência em todas as nossas ações.</p>
-                <p>Sediado na cidade de Rio de Janeiro desde 2020 e atuando nas cidades de Niterói, São João de Meriti, São Gonçalo, Itaborai, DF e Norte de Minas Gerais, nosso escritório conta com a expertise dos advogados Valdinan Soares e Camila Angélico, que compartilham a visão de um atendimento personalizado, pautado na empatia e na compreensão das particularidades de cada caso.</p>
+                <p>Valdinan Carvalho Advocacia & Consultoria Jurídica foi fundado para oferecer serviços jurídicos de excelência, unindo seriedade, competência e compromisso com você cliente. Nosso objetivo é superar expectativas com soluções inovadoras e eficazes, sempre guiados pela ética, transparência e um atendimento personalizado.</p>
+                <p>Com sede no Rio de Janeiro desde 2020 e atuação em Niterói, São João de Meriti, São Gonçalo, Itaboraí, Distrito Federal e Norte de Minas Gerais, contamos com a expertise dos advogados Valdinan Soares e Camila Angélico, que se dedicam a compreender as necessidades únicas de cada cliente e entregar resultados sólidos, com empatia e confiança em todas as etapas do processo</p>
 
             </div>
             
