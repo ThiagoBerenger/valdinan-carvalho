@@ -23,6 +23,8 @@
 }
 
 .about-cta_container a {
+    text-decoration: none;
+    color: var(--dark-gray);
     cursor: pointer;
     padding: .5rem 2rem;
     border-left: 5px solid var(--accent-gold);
