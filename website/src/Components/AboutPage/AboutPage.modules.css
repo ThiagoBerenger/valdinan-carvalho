@@ -31,42 +31,16 @@
 }
 
 .about-page_content {
-    display: flex;
-    align-items: center;
-    padding: 4rem 12rem;
-}
-
-.about-page_content img {
-    width: 320px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 1rem 1rem 0;
-}
-
-.about-img_container {
-    position: relative;
-}
-
-.about-img_text {
-    position: absolute;
-    bottom: 0;
-    border-radius: 0 0 0rem 1rem;
-    background-color: var(--dark-gold);
     width: 100%;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-around;
+    padding: 4rem 0;
 }
-
-.about-img_text h5, h6 {
-    font-size: 16px;
-    color: var(--dark-gray);
-    font-family: poppins;
-}
-
 
 .about-text_container {
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .about-text_container h3 {

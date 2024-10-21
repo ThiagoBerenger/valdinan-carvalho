@@ -23,21 +23,16 @@ const AboutPage = () => {
           initial={{ x: '-20vw', opacity: 0 }} 
           animate={isInView ? { x: 0, opacity: 1} : { x: '-20vw', opacity: 0 }}
           transition={{ type: "spring", stiffness: 100, damping: 20 }}>
-            <div className="about-img_container">
-              <img src={foto} alt="Valdinan Carvalho" />
-              <div className="about-img_text">
-                <h5>Advogado</h5>
-                <h6>OAB: 237.536/RJ</h6>
-              </div>
-              </div>
+
             <div className='about-text_container'>
-                <h3>Sobre mim</h3>
+                <h3>Conheça nossa história</h3>
                 <h4>Valdinan Carvalho Advocacia & Consultoria Juridica</h4>
                 
-                <p>Advogado, Pós-Graduado em Direito Digital, com OAB ativa, com conhecimentos em contencioso de massa nas áreas de direito Civil,Trabalhista,Tributário,Consumidor com experiência prática em litígios e consultoria jurídica.</p>
-                <p>Com habilidades interpessoais bem desenvolvidas, o que me permite lidar efetivamente com clientes e colaborar de forma produtiva com uma equipe.</p>
-                <p>Membro do Núcleo de Estudos em Arbitragem da Faculdade Presbiteriana Mackenzie Rio (NEAMACK) e do Comitê de Jovens Arbitralistas (CJA/CBMA).</p>
+                <p>Fundado com o objetivo de oferecer serviços jurídicos de excelência, nosso escritório de advocacia alia seriedade, competência, compromisso com prazos, empatia e confiança para atender às necessidades de nossos clientes. Somos guiados pela busca constante por soluções inovadoras e eficazes, valorizando a ética e a transparência em todas as nossas ações.</p>
+                <p>Sediado na cidade de Rio de Janeiro desde 2020 e atuando nas cidades de Niterói, São João de Meriti, São Gonçalo, Itaborai, DF e Norte de Minas Gerais, nosso escritório conta com a expertise dos advogados Valdinan Soares e Camila Angélico, que compartilham a visão de um atendimento personalizado, pautado na empatia e na compreensão das particularidades de cada caso.</p>
+
             </div>
+            
         </motion.div>
     </div>
   )
