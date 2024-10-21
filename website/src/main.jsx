@@ -8,11 +8,7 @@ import Home from './Routes/Home.jsx'
 import About from './Routes/About.jsx'
 import Contact from './Routes/Contact.jsx'
 import Civil from './Routes/Civil.jsx'
-import Penal from './Routes/Penal.jsx'
 import Trabalhista from './Routes/Trabalhista.jsx'
-import Empresarial from './Routes/Empresarial.jsx'
-import Familia from './Routes/Familia.jsx'
-import Tributario from './Routes/Tributario.jsx'
 import Consumidor from './Routes/Consumidor.jsx'
 import Previdenciario from './Routes/Previdenciario.jsx'
 
@@ -37,24 +33,8 @@ const router = createBrowserRouter([
         element: <Civil />
       },
       {
-        path: '/direito-penal',
-        element: <Penal />
-      },
-      {
         path: '/direito-trabalhista',
         element: <Trabalhista />
-      },
-      {
-        path: '/direito-empresarial',
-        element: <Empresarial/>
-      },
-      {
-        path: '/direito-da-familia',
-        element: <Familia/>
-      },
-      {
-        path: '/direito-tributario',
-        element: <Tributario/>
       },
       {
         path: '/direito-do-consumidor',

@@ -7,11 +7,7 @@ import { motion, useInView } from 'framer-motion';
 
 // ícones
 import { 
-  PiGavelThin, 
-  PiBuildingApartmentThin, 
-  PiCurrencyCircleDollarThin, 
   PiUserThin,
-  PiHouseLineThin, 
   PiShieldPlusThin, 
   PiIdentificationCardThin, 
   PiShoppingCartSimpleThin  
@@ -63,38 +59,10 @@ const ServicesComponent = () => {
           </motion.div>
         </Link>
 
-        <Link to='/direito-penal'>
-          <motion.div className="box" variants={itemVariants}>
-            <PiGavelThin />
-            <h4>Penal</h4>
-          </motion.div>
-        </Link>
-
         <Link to='/direito-trabalhista'>
           <motion.div className="box" variants={itemVariants}>
             <PiIdentificationCardThin />
             <h4>Trabalhista</h4>
-          </motion.div>
-        </Link>
-
-        <Link to='/direito-empresarial'>
-          <motion.div className="box" variants={itemVariants}>
-            <PiBuildingApartmentThin />
-            <h4>Empresarial</h4>
-          </motion.div>
-        </Link>
-
-        <Link to='/direito-da-familia'>
-          <motion.div className="box" variants={itemVariants}>
-            <PiHouseLineThin />
-            <h4>Família</h4>
-          </motion.div>
-        </Link>
-
-        <Link to='/direito-tributario'>
-          <motion.div className="box" variants={itemVariants}>
-            <PiCurrencyCircleDollarThin />
-            <h4>Tributário</h4>
           </motion.div>
         </Link>
 

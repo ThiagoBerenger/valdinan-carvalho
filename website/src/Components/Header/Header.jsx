@@ -43,11 +43,7 @@ const Header = () => {
               {dropdownOpen && (
                 <ul className="dropdown">
                   <li className="dropdown-item"><Link to="/direito-civil" onClick={() => {setMenuOpen(false)}}>Civil</Link></li>
-                  <li className="dropdown-item"><Link to="/direito-penal" onClick={() => {setMenuOpen(false)}}>Penal</Link></li>
-                  <li className="dropdown-item"><Link to="/direito-trabalhista" onClick={() => {setMenuOpen(false)}}>Trabalhista</Link></li>
-                  <li className="dropdown-item"><Link to="/direito-empresarial" onClick={() => {setMenuOpen(false)}}>Empresarial</Link></li>
-                  <li className="dropdown-item"><Link to="/direito-da-familia" onClick={() => {setMenuOpen(false)}}>Família</Link></li>
-                  <li className="dropdown-item"><Link to="/direito-tributario" onClick={() => {setMenuOpen(false)}}>Tributário</Link></li>
+                  <li className="dropdown-item"><Link to="/direito-trabalhista" onClick={() => {setMenuOpen(false)}}>Trabalhista</Link></li>              
                   <li className="dropdown-item"><Link to="/direito-do-consumidor" onClick={() => {setMenuOpen(false)}}>Consumidor</Link></li>
                   <li className="dropdown-item"><Link to="/direito-previdenciario" onClick={() => {setMenuOpen(false)}}>Previdenciário</Link></li>
                 </ul>
