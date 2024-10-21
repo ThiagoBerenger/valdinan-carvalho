@@ -1,9 +1,14 @@
 import React from 'react'
+import CompliancePage from '../Components/CompliancePage/CompliancePage'
+import Form from '../Components/Form/Form'
+import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 
 const Compliance = () => {
   return (
     <div>
-        <h1>Compliance</h1>
+        <CompliancePage />
+        <ServicesComponent />
+        <Form/>
     </div>
   )
 }

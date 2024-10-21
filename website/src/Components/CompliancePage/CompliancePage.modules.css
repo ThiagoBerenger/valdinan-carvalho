@@ -1,0 +1,121 @@
+.compliance-title {
+    background-image: linear-gradient(var(--dark-gray), var(--primary-black));
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compliance-title h1 {
+    font-size: 52px;
+    font-family: poppins;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+}
+
+.compliance-title h2 {
+    font-size: 22px;
+    color: #fff;
+    font-family: poppins;
+    border-bottom: 1px solid var(--dark-gold);
+    padding: .4rem 2rem;
+}
+
+.compliance-content_container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+    gap: 2rem;
+}
+
+.compliance-content_container img {
+    width: 480px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 1rem;
+    object-position: 75%;
+}
+
+.compliance-content h2 {
+    font-size: 32px;
+    color: var(--dark-grey);
+    padding-bottom: 1rem;
+}
+
+.compliance-content p {
+    width: 70%;
+    padding: .4rem;
+}
+
+.lgpd-content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-gold);
+    padding: 2rem 0;
+}
+
+.lgpd-content_container h2 {
+    font-size: 38px;
+    color: var(--dark-gray);
+    padding: 1rem;
+}
+
+.lgpd-content_container p {
+    width: 60%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .compliance-title {
+        height: 40vh;    }
+    
+    .compliance-title h1 {
+        font-size: 32px;
+        line-height: 42px;
+        text-align: center;
+    }
+    
+    .compliance-title h2 {
+        font-size: 18px;
+        padding: .4rem 1rem;
+    }
+    
+    .compliance-content_container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    .compliance-content_container img {
+        width: 320px;
+        height: 220px;
+    }
+    
+    .compliance-content h2 {
+        font-size: 28px;
+    }
+    
+    .compliance-content p {
+        width: 90%;
+        padding: 0rem;
+    }
+
+    .lgpd-content_container {
+        padding: 1rem;
+    }
+    
+    .lgpd-content_container h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .lgpd-content_container p {
+        width: 90%;
+        text-align: center;
+    }
+}
