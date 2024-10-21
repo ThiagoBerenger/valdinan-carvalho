@@ -6,11 +6,12 @@ import './index.css'
 // páginas
 import Home from './Routes/Home.jsx'
 import About from './Routes/About.jsx'
-import Contact from './Routes/Contact.jsx'
 import Civil from './Routes/Civil.jsx'
 import Trabalhista from './Routes/Trabalhista.jsx'
 import Consumidor from './Routes/Consumidor.jsx'
 import Previdenciario from './Routes/Previdenciario.jsx'
+import Compliance from './Routes/Compliance.jsx'
+import Contact from './Routes/Contact.jsx'
 
 // router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: '/direito-previdenciario',
         element: <Previdenciario/>
+      },
+      {
+        path: '/compliance-e-lgpd',
+        element: <Compliance />
       },
       {
         path: '/contato',

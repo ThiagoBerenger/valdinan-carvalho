@@ -36,6 +36,7 @@ const Header = () => {
           <ul className={`nav-list ${menuOpen ? 'active' : ''}`}>
             <li className="nav-item"><Link to="/" onClick={() => {setMenuOpen(false)}}>Home</Link></li>
             <li className="nav-item"><Link to="/sobre" onClick={() => {setMenuOpen(false)}}>Sobre</Link></li>
+            <li className="nav-item"><Link to="/compliance-e-lgpd" onClick={() => {setMenuOpen(false)}}>Compliance e LGPD</Link></li>
 
             {/* Dropdown para Área de Atuação */}
             <li className="nav-item" onClick={toggleDropdown} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : "false"}>
