@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   background-color: #fff;
   padding: 2rem;
@@ -12,6 +11,7 @@
   width: 420px;
   height: 420px;
  margin: 1rem;
+ border-radius: 1rem;
 }
 
 .map-container ul li{
@@ -30,6 +30,7 @@
     padding: 2rem;
     border-radius: 1rem;
     background-color: var(--dark-gold);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .form-container h2 {
