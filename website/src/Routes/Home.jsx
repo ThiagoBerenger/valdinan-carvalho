@@ -8,9 +8,21 @@ import GoogleReviews from '../Components/GoogleReviews/GoogleReviews'
 import { ScrollRestoration } from 'react-router-dom'
 import CoverageArea from '../Components/CoverageArea/CoverageArea'
 
+// SEO
+import Helmet from 'react-helmet'
+
 const Home = () => {
   return (
     <div>
+    {/* SEO */}
+    <Helmet>
+        <title>Valdinan Carvalho</title>
+        <meta name="description" content="Transformando desafios jurídicos complexos em soluções eficazes e personalizadas" />
+        <meta name="keywords" content="Advogado, indenização, direito do consumidor" />
+        <link rel="canonical" href="https://www.valdinancarvalho.com/home" />
+        <link rel="icon" type="image/png" href="/public/favicon.ico" />
+      </Helmet>
+    {/* Componentes */}
       <ScrollRestoration/>
         <Hero />
         <ServicesComponent/>
