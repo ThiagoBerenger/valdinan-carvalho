@@ -1,50 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import './GoogleReviews.modules.css'
+import React, { useEffect, useState } from 'react';
+import './GoogleReviews.modules.css'; // Importe seu CSS se necessário
 
-// Seu componente para exibir reviews
 const GoogleReviews = () => {
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const API_KEY = 'SUA_API_KEY';  // Substitua com sua chave API
-  const PLACE_ID = 'SEU_PLACE_ID';  // Substitua com o Place ID do seu negócio
+  const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const response = await fetch(
-          `https://maps.googleapis.com/maps/api/place/details/json?placeid=${PLACE_ID}&fields=reviews&key=${API_KEY}`
-        );
-        const data = await response.json();
-        setReviews(data.result.reviews);
-      } catch (error) {
-        console.error('Erro ao carregar reviews:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
+    // Verifica se o script do Elfsight já foi adicionado
+    if (!document.querySelector('script[src="https://static.elfsight.com/platform/platform.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://static.elfsight.com/platform/platform.js';
+      script.async = true;
 
-    fetchReviews();
+      // Define um callback para quando o script for carregado
+      script.onload = () => setScriptLoaded(true);
+
+      document.body.appendChild(script);
+    } else {
+      // Se o script já estava presente, marca como carregado
+      setScriptLoaded(true);
+    }
+
+    // Função de limpeza (opcional)
+    return () => {
+      // Não remove o script para evitar problemas com múltiplas renderizações
+    };
   }, []);
 
-  if (loading) {
-    return <p>Carregando reviews...</p>;
-  }
-
   return (
-    <div className="google-reviews">
+    <div className='google-reviews'>
       <h2>O que nossos clientes estão dizendo:</h2>
-      {reviews.length === 0 ? (
-        <p>Não há reviews disponíveis no momento.</p>
-      ) : (
-        <ul>
-          {reviews.map((review) => (
-            <li key={review.time}>
-              <p><strong>{review.author_name}</strong></p>
-              <p>{review.text}</p>
-              <p>Classificação: {review.rating} estrelas</p>
-            </li>
-          ))}
-        </ul>
+      {scriptLoaded && (
+        <div 
+          className="elfsight-app-029f3f3a-b557-4c0a-a083-544509d16622" 
+          data-elfsight-app-lazy
+        >
+        </div>
       )}
     </div>
   );
