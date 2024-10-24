@@ -1,0 +1,32 @@
+.fixed-whats {
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
+    z-index: 99;
+}
+
+.fixed-whats svg {
+    color: #fff;
+    background-color: #25D366;
+    border-radius: 1rem 1rem 1rem 0;
+    font-size: 52px;
+    cursor: pointer;
+    padding: .4rem; 
+    transition: .2s ease;
+}
+
+.fixed-whats svg:hover {
+    transform: translateY(-8px);
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-whats {
+        right: 1rem;
+        bottom: 4rem;
+    }
+    
+    .fixed-whats svg {
+        font-size: 42px;
+        padding: .4rem; 
+    }
+}
