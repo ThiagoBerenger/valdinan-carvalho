@@ -7,6 +7,8 @@ import complianceImg from '../../assets/compliance.png';
 // icones
 import { FaShieldAlt, FaLock, FaClipboardCheck, FaUsers, FaRegDotCircle, FaCaretDown } from 'react-icons/fa';
 
+import { motion, useInView } from 'framer-motion'
+
 
 const CompliancePage = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -19,6 +21,9 @@ const CompliancePage = () => {
       setActiveIndex(index); // Abre o item clicado
     }
   };
+  
+  const ref = useRef(null)
+  const isInView = useInView(ref, {once: true})
 
   return (
     <div className='compliance-container'>
@@ -27,6 +32,7 @@ const CompliancePage = () => {
         <h1>Compliance e LGPD</h1>
       </div>
       <div className="compliance-content_container">
+  
         <img src={complianceImg} alt="Compliance e LGPD" loading='lazy' />
 
         <div className="compliance-content">
@@ -42,7 +48,11 @@ const CompliancePage = () => {
 
         <h3>Principais Regras e Obrigações das Organizações</h3>
 
-        <div className="accordion">
+        <motion.div className="accordion"
+        ref={ref}
+        initial={{ x: '-20vw', opacity: 0 }} 
+        animate={isInView ? { x: 0, opacity: 1} : { x: '-20vw', opacity: 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 20 }}>
           {[ 
             {
               icon: <FaShieldAlt />,
@@ -87,7 +97,7 @@ const CompliancePage = () => {
               />
             </div>
           ))}
-        </div>
+        </motion.div>
         <h4>Compromisso do Escritório Valdinan Carvalho Advocacia e Consultoria Jurídica
         </h4>
         <p>O Valdinan Carvalho Advocacia e Consultoria Jurídica leva a sério os ditames da LGPD e adota rigorosamente políticas e práticas de proteção de dados pessoais em todas as suas atividades. Nosso escritório garante o cumprimento das exigências legais, assegurando a privacidade e segurança das informações de clientes e terceiros.</p>
