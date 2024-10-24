@@ -7,6 +7,8 @@ import './Header.modules.css';
 
 import { IoMdArrowDropdown } from "react-icons/io";
 
+import { FaWhatsapp, FaFacebookSquare, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);  
@@ -51,6 +53,14 @@ const Header = () => {
               )}
             </li>
             <li className="nav-item"><Link to="/contato" onClick={() => {setMenuOpen(false)}}>Contato</Link></li>
+
+            <div className="social-container">
+              <a href='https://api.whatsapp.com/send/?phone=5521994634084&text&type=phone_number&app_absent=0' target='blank'><FaWhatsapp/></a>
+              <a href='https://www.facebook.com/people/Valdinan-Carvalho-Advocacia-e-Consultoria-Juridica/61555735794558/?locale=pt_BR' target='blank'><FaFacebookSquare/></a>
+              <a href='https://www.instagram.com/valdinan_carvalho/' target='blank'><FaInstagram/></a>
+              <a href='https://www.linkedin.com/in/valdinan-carvalhoadv/?originalSubdomain=br' target='blank'><FaLinkedin/></a>
+              <a href='https://www.youtube.com/@valdinancarvalho9434' target='blank'><FaYoutube/></a>
+            </div>
           </ul>
         </nav>
       </div>

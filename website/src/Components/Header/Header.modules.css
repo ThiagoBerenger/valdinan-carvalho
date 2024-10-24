@@ -140,6 +140,23 @@
   position: absolute;
 }
 
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  margin-left: 4rem;
+}
+
+.social-container svg {
+  font-size: 18px;
+  color: #fff;
+}
+
+.social-container svg:hover {
+  opacity: .8;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
 
@@ -209,4 +226,14 @@
     padding: 1rem 2rem;
   }
 
+  .social-container {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 0rem;
+  }
+  
+  .social-container svg {
+    font-size: 22px;
+    color: #fff;
+  }
 }
