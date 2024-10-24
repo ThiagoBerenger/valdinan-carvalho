@@ -150,10 +150,11 @@
 .social-container svg {
   font-size: 18px;
   color: #fff;
+  transition: .2s ease;
 }
 
 .social-container svg:hover {
-  opacity: .8;
+  color: var(--dark-gold);
 }
 
 .social-responsive {
