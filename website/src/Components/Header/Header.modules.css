@@ -145,7 +145,6 @@
   align-items: center;
   justify-content: center;
   gap: .8rem;
-  margin-left: 4rem;
 }
 
 .social-container svg {
@@ -155,6 +154,10 @@
 
 .social-container svg:hover {
   opacity: .8;
+}
+
+.social-responsive {
+  display: none;
 }
 
 /* Mobile Responsiveness */
@@ -227,12 +230,20 @@
   }
 
   .social-container {
+    display: none;
+  }
+
+  .social-responsive {
+    display: flex;
+  }
+
+  .social-responsive {
     gap: 2rem;
     margin-top: 2rem;
     margin-left: 0rem;
   }
   
-  .social-container svg {
+  .social-responsive svg {
     font-size: 22px;
     color: #fff;
   }
