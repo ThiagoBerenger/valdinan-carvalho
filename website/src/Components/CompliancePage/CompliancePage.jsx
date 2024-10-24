@@ -5,7 +5,7 @@ import './CompliancePage.modules.css';
 import complianceImg from '../../assets/compliance.png';
 
 // icones
-import { FaShieldAlt, FaLock, FaClipboardCheck, FaUsers, FaRegDotCircle } from 'react-icons/fa';
+import { FaShieldAlt, FaLock, FaClipboardCheck, FaUsers, FaRegDotCircle, FaCaretDown } from 'react-icons/fa';
 
 
 const CompliancePage = () => {
@@ -76,7 +76,7 @@ const CompliancePage = () => {
             },
           ].map((item, index) => (
             <div key={index} className={`accordion-item ${activeIndex === index ? 'active' : ''}`} onClick={() => toggleAccordion(index)}>
-              <h3>{item.icon} {item.title}</h3>
+              <h3>{item.icon} {item.title} <FaCaretDown/></h3>
               <div
                 className="accordion-content"
                 ref={(el) => (contentRefs.current[index] = el)}
@@ -88,6 +88,10 @@ const CompliancePage = () => {
             </div>
           ))}
         </div>
+        <h4>Compromisso do Escritório Valdinan Carvalho Advocacia e Consultoria Jurídica
+        </h4>
+        <p>O Valdinan Carvalho Advocacia e Consultoria Jurídica leva a sério os ditames da LGPD e adota rigorosamente políticas e práticas de proteção de dados pessoais em todas as suas atividades. Nosso escritório garante o cumprimento das exigências legais, assegurando a privacidade e segurança das informações de clientes e terceiros.</p>
+        <p>Com essa postura, buscamos construir confiança e promover um ambiente seguro e ético para todos que interagem conosco, demonstrando nosso compromisso com a responsabilidade e transparência na gestão de dados pessoais.</p>
       </div>
     </div>
   );
