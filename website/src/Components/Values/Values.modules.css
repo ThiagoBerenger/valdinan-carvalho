@@ -1,7 +1,7 @@
 .values-container {
     margin: 0 auto;
     background-color: var(--dark-gold);
-    padding: 2rem 0;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,22 +16,32 @@
 }
 
 .values-boxes_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 
 .value-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     border: 1px solid var(--dark-gray);
     color: var(--dark-gray);
-    text-align: center;
     padding: 2rem;
-    width: 220px;
-    height: 220px;
+    max-width: 25%;
+    height: 300px;
+}
+
+.box-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.value-box p {
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -41,14 +51,18 @@
     }
     
     .values-boxes_container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1rem;
     }
     
     .value-box {
-        padding: 1rem;
-        width: 180px;
-        height: 180px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--dark-gray);
+        color: var(--dark-gray);
+        padding: 2rem;
+        max-width: 90%;
+        height: auto;
     }
 }
