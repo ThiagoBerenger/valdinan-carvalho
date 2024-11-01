@@ -12,6 +12,13 @@
     padding: 0 0 4rem 0;
 }
 
+/* resolução notebook */
+@media screen and (max-width:1280px) {
+    .google-reviews {
+        padding: 4rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .google-reviews {
         padding: 2rem .5rem;
