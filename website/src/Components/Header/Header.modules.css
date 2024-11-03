@@ -161,6 +161,15 @@
   display: none;
 }
 
+/* notebook */
+@media screen and (max-width: 1280px) {
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+}
+
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
 
