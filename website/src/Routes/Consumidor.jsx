@@ -7,6 +7,9 @@ import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
 
+// SEO
+import Helmet from 'react-helmet'
+
 const Consumidor = () => {
 
     const text = `O Direito do Consumidor visa proteger os direitos e interesses dos consumidores, garantindo a observância das normas de proteção e defesa do consumidor nas relações de consumo. Nossa equipe de advogados especializados em Direito do Consumidor atua na defesa dos direitos dos consumidores e na assessoria jurídica a fornecedores, representando nossos clientes em processos relacionados a práticas comerciais abusivas, responsabilidade civil, vícios e defeitos em produtos e serviços, entre outros.
@@ -17,6 +20,15 @@ const Consumidor = () => {
 
   return (
     <div>
+      {/* seo */}
+      <Helmet>
+        <title>Trabalhista | Valdinan Carvalho</title>
+        <meta name="description" content="O Direito do Consumidor visa proteger os direitos e interesses dos consumidores, garantindo a observância das normas de proteção e defesa do consumidor nas relações de consumo." />
+        <meta name="keywords" content="Advogado, indenização, direito do consumidor" />
+        <link rel="canonical" href="https://www.valdinancarvalho.com/direito-do-consumidor" />
+        <link rel="icon" type="image/png" href="/public/favicon.ico" />
+      </Helmet>
+      {/* componentes */}
       <ScrollRestoration/>
         <AreasComponent title={'Consumidor'} text={text}/>
         <ServicesComponent />

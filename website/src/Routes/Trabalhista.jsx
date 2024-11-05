@@ -6,6 +6,9 @@ import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
 
+// SEO
+import Helmet from 'react-helmet'
+
 const Trabalhista = () => {
 
     const text = `O Direito Trabalhista regula as relações entre empregados e empregadores, garantindo a observância das normas trabalhistas e a proteção dos direitos dos trabalhadores. Nossa equipe de advogados especializados em Direito Trabalhista atua tanto na defesa dos direitos dos trabalhadores quanto na consultoria e contencioso empresarial, representando nossos clientes em processos trabalhistas, como reclamações trabalhistas, ações de indenização e questões sindicais.
@@ -16,6 +19,15 @@ const Trabalhista = () => {
 
   return (
     <div>
+      {/* seo */}
+      <Helmet>
+        <title>Trabalhista | Valdinan Carvalho</title>
+        <meta name="description" content="O Direito Trabalhista regula as relações entre empregados e empregadores, garantindo a observância das normas trabalhistas e a proteção dos direitos dos trabalhadores." />
+        <meta name="keywords" content="Advogado, indenização, direito trabalhista" />
+        <link rel="canonical" href="https://www.valdinancarvalho.com/direito-trabalhista" />
+        <link rel="icon" type="image/png" href="/public/favicon.ico" />
+      </Helmet>
+      {/* componentes */}
       <ScrollRestoration/>
         <AreasComponent title={'Trabalhista'} text={text}/>
         <ServicesComponent />
