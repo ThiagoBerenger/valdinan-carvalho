@@ -19,7 +19,7 @@ const Home = () => {
         <title>Valdinan Carvalho</title>
         <meta name="description" content="Transformando desafios jurídicos complexos em soluções eficazes e personalizadas" />
         <meta name="keywords" content="Advogado, indenização, direito do consumidor" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/home" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
     {/* Componentes */}

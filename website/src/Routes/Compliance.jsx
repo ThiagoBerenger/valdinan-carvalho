@@ -16,7 +16,7 @@ const Compliance = () => {
         <title>Compliance e LGPD | Valdinan Carvalho </title>
         <meta name="description" content="Com uma sociedade que visa empresas cada vez mais éticas, aplicar a Política de Compliance é essencial para garantir a confiança e a longevidade dos negócios." />
         <meta name="keywords" content="Advogado, indenização, direito do consumidor, compliance, lgpd, lei geral de proteção de dados" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/compliance-e-lgpd" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/compliance-e-lgpd" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
         <ScrollRestoration/>

@@ -27,7 +27,7 @@ const Consumidor = () => {
         <title>Trabalhista | Valdinan Carvalho</title>
         <meta name="description" content="O Direito do Consumidor visa proteger os direitos e interesses dos consumidores, garantindo a observância das normas de proteção e defesa do consumidor nas relações de consumo." />
         <meta name="keywords" content="Advogado, indenização, direito do consumidor" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/direito-do-consumidor" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/direito-do-consumidor" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
       {/* componentes */}

@@ -18,7 +18,7 @@ const About = () => {
         <title>Sobre Nós | Valdinan Carvalho</title>
         <meta name="description" content="Valdinan Carvalho Advocacia & Consultoria Jurídica foi idealizado para oferecer serviços jurídicos de excelência." />
         <meta name="keywords" content="Advogado, indenização, direito do consumidor" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/sobre" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/sobre" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
       {/* componentes */}

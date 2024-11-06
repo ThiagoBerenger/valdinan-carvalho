@@ -27,7 +27,7 @@ const Civil = () => {
         <title>Civil | Valdinan Carvalho</title>
         <meta name="description" content="O Direito Civil é uma área abrangente que regula as relações jurídicas entre pessoas físicas e jurídicas." />
         <meta name="keywords" content="Advogado, indenização, direito civil" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/direito-civil" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/direito-civil" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
       {/* componentes */}

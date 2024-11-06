@@ -26,7 +26,7 @@ const Trabalhista = () => {
         <title>Trabalhista | Valdinan Carvalho</title>
         <meta name="description" content="O Direito Trabalhista regula as relações entre empregados e empregadores, garantindo a observância das normas trabalhistas e a proteção dos direitos dos trabalhadores." />
         <meta name="keywords" content="Advogado, indenização, direito trabalhista" />
-        <link rel="canonical" href="https://www.valdinancarvalho.com/direito-trabalhista" />
+        <link rel="canonical" href="https://www.valdinancarvalhoadv.com/direito-trabalhista" />
         <link rel="icon" type="image/png" href="/public/favicon.ico" />
       </Helmet>
       {/* componentes */}
