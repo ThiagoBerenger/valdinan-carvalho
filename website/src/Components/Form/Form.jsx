@@ -28,7 +28,12 @@ const Form = () => {
     emailjs.send(
       "service_6pbtkcg",           // Service ID
       "template_wcxq3ok",          // Template ID
-      formData,                    // Dados do formulário
+      {
+        message: formData.message,    // Mensagem do formulário
+        user_name: formData.name,     // Nome do usuário
+        user_email: formData.email,   // E-mail do usuário
+        user_phone: formData.phone,   // Telefone do usuário
+      },
       "em1f6A_Z-fRnnIADz"         // User ID
     )
     .then((result) => {
