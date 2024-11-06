@@ -34,6 +34,14 @@ const Form = () => {
     .then((result) => {
         console.log("Email enviado com sucesso:", result.text);
         alert("Mensagem enviada com sucesso!");
+
+      // limpar os campos após envio
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      })
     }, (error) => {
         console.log("Erro ao enviar:", error.text);
         alert("Ocorreu um erro. Tente novamente.");
