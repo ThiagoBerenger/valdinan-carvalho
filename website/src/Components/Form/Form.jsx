@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Form.modules.css";
 
+// email js
+import emailjs from "@emailjs/browser"; 
+
 import { GiBrazilFlag } from "react-icons/gi";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocalPhone } from "react-icons/md";
@@ -20,8 +23,21 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar o formulário (por exemplo, via API)
-    console.log("Formulário enviado:", formData);
+
+    // Configuração do EmailJS para enviar o formulário
+    emailjs.send(
+      "YOUR_SERVICE_ID",           // Substitua pelo seu Service ID
+      "YOUR_TEMPLATE_ID",          // Substitua pelo seu Template ID
+      formData,                    // Dados do formulário
+      "YOUR_USER_ID"               // Substitua pelo seu User ID
+    )
+    .then((result) => {
+        console.log("Email enviado com sucesso:", result.text);
+        alert("Mensagem enviada com sucesso!");
+    }, (error) => {
+        console.log("Erro ao enviar:", error.text);
+        alert("Ocorreu um erro. Tente novamente.");
+    });
   };
 
   return (
