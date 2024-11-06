@@ -1,13 +1,13 @@
 import React, { useRef } from 'react'
 import './AreasComponent.modules.css'
 
-import areaImage from '../../assets/backgroundPilares.jpg'
+import pilarImage from '../../assets/backgroundPilares.jpg'
 import escritorio from '../../assets/escritorio.jpg'
 
 // animação
 import { motion, useInView } from 'framer-motion'
 
-const AreasComponent = ({title, text}) => {
+const AreasComponent = ({title, text, areaImage}) => {
 
   const ref = useRef(null)
   const isInView = useInView(ref, {once: true})
@@ -37,7 +37,7 @@ const AreasComponent = ({title, text}) => {
                 <h1>{title}</h1>
                 <h2>Transformando desafios jurídicos complexos em soluções eficazes e personalizadas</h2>
             </div>
-            <img src={areaImage} alt={title} />
+            <img src={pilarImage} alt={title} />
         </div>
 
         <div className="area-content">
@@ -46,7 +46,7 @@ const AreasComponent = ({title, text}) => {
                 <h4>{title}</h4>
                 <TextWithLineBreaks text={text}/>
             </div>
-            <img src={escritorio} alt={title}></img>
+            <img src={areaImage} alt={title}></img>
         </div>
     </div>
   )

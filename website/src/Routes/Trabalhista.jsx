@@ -6,6 +6,8 @@ import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
 
+import areaImage from '../assets/trabalhista.jpg'
+
 // SEO
 import Helmet from 'react-helmet'
 
@@ -29,7 +31,7 @@ const Trabalhista = () => {
       </Helmet>
       {/* componentes */}
       <ScrollRestoration/>
-        <AreasComponent title={'Trabalhista'} text={text}/>
+        <AreasComponent title={'Trabalhista'} text={text} areaImage={areaImage}/>
         <ServicesComponent />
         <Form />
     </div>

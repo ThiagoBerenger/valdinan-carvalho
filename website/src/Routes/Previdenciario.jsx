@@ -6,6 +6,8 @@ import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
 
+import areaImage from '../assets/previdenciario.jpg'
+
 const Previdenciario = () => {
 
     const text = `O Direito Previdenciário trata das normas e princípios que regulam a Previdência Social, garantindo a proteção aos segurados e seus dependentes em situações como aposentadoria, auxílio-doença, pensão por morte, entre outros. Nossa equipe de advogados especializados em Direito Previdenciário atua na orientação, planejamento e acompanhamento de processos previdenciários, buscando a garantia dos direitos e benefícios aos quais nossos clientes têm direito.
@@ -17,7 +19,7 @@ Além disso, nossos advogados estão sempre atualizados sobre as mudanças na le
   return (
     <div>
       <ScrollRestoration/>
-         <AreasComponent title={'Previdenciário'} text={text}/>
+         <AreasComponent title={'Previdenciário'} text={text} areaImage={areaImage}/>
         <ServicesComponent />
         <Form />
     </div>

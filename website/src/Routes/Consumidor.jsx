@@ -7,6 +7,8 @@ import AreasComponent from '../Components/AreasComponent/AreasComponent'
 import ServicesComponent from '../Components/ServicesComponent/ServicesComponent'
 import Form from '../Components/Form/Form'
 
+import areaImage from '../assets/consumidor.jpg'
+
 // SEO
 import Helmet from 'react-helmet'
 
@@ -30,7 +32,7 @@ const Consumidor = () => {
       </Helmet>
       {/* componentes */}
       <ScrollRestoration/>
-        <AreasComponent title={'Consumidor'} text={text}/>
+        <AreasComponent title={'Consumidor'} text={text} areaImage={areaImage}/>
         <ServicesComponent />
         <Form />
     </div>
