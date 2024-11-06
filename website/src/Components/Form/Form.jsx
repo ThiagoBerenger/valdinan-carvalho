@@ -26,10 +26,10 @@ const Form = () => {
 
     // Configuração do EmailJS para enviar o formulário
     emailjs.send(
-      "service_6pbtkcg",           // Substitua pelo seu Service ID
-      "template_wcxq3ok",          // Substitua pelo seu Template ID
+      "service_6pbtkcg",           // Service ID
+      "template_wcxq3ok",          // Template ID
       formData,                    // Dados do formulário
-      "Yem1f6A_Z-fRnnIADz"               // Substitua pelo seu User ID
+      "em1f6A_Z-fRnnIADz"         // User ID
     )
     .then((result) => {
         console.log("Email enviado com sucesso:", result.text);
