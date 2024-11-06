@@ -29,10 +29,10 @@ const Form = () => {
       "service_6pbtkcg",           // Service ID
       "template_wcxq3ok",          // Template ID
       {
-        message: formData.message,    // Mensagem do formulário
         user_name: formData.name,     // Nome do usuário
         user_email: formData.email,   // E-mail do usuário
         user_phone: formData.phone,   // Telefone do usuário
+        message: formData.message,    // Mensagem do formulário
       },
       "em1f6A_Z-fRnnIADz"         // User ID
     )
