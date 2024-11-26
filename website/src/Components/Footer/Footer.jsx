@@ -50,7 +50,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="footer-bottom">
-        <p>&copy; 2024 Seu Escritório de Advocacia. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Valdinan Carvalho Advogado. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
