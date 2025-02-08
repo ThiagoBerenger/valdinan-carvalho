@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Informações de Contato</h3>
           <ul>
-            <li><FaMapMarkerAlt /> Rua Santo Amaro 184/307, Bairro Gloria Rio de Janeiro, Rio de Janeiro, 22211-230.</li>
+            <li><FaMapMarkerAlt /> Av. Mal. Câmara, 150 - Centro, Rio de Janeiro - RJ, 20020-080</li>
             <li><MdEmail/> <a href="mailto:valdinan.carvalho@gmail.com">valdinan.carvalho@gmail.com</a></li>
             <li><FaPhoneAlt  /> <a href="tel:+5521994634084">(21) 99463-4084</a></li>
           </ul>
